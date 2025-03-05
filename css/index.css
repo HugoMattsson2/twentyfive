@@ -1,0 +1,78 @@
+body,ul{
+    margin: 0;
+    
+}
+
+.menu{
+height: 60vh;
+width: 40vh;
+background: beige;
+position: fixed;
+top: 0;
+left: -40vw;
+transition: left 0.3s;
+box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+z-index: 10;
+}
+
+.menu-button{
+cursor: pointer;
+display: inline;
+}
+
+.menu-button i.material-icons{
+font-size: 2.5rem;
+}
+
+
+.show{
+left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+.txt{
+    grid-area: txt;
+}
+
+#img1{
+    grid-area: img1;
+}
+#img2{
+    grid-area: img2;
+}
+
+.link{
+    grid-area: link1;
+}
+
+
+@media screen and (min-width: 768px){
+.wrapper{
+display: grid;
+height: 200vh;
+width: 100vh;
+grid-template-columns: 60% 40%;
+grid-template-rows:50% 50% 50% 50%;
+grid-template-areas: 
+"txt img1"
+" . link1"
+"img2 ."
+". .";
+
+
+}
+}
