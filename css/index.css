@@ -2,6 +2,8 @@ body,ul{
 
     margin: 0;
     background-color: #75583B;
+    background-image: url("/img/istockphoto-2098364973-2048x2048.jpg");
+    background-size:cover ;
 }
 
 .menu{
@@ -86,7 +88,10 @@ left: 0;
 
 grid-area: rub;
 text-align: center;
+font-size: 8vw;
+background-color: #724c26;
 }
+
 
 .txt2{
     grid-area: txt2;
@@ -100,9 +105,12 @@ text-align: center;
 
 #img1{
     grid-area: img1;
-    object-fit: fill;
-    height: 100%;
+   
+    height: 110%;
     width:100%;
+    margin-top: -2.1%;
+    
+
 }
 #img2{
     grid-area: img2;
