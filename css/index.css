@@ -82,6 +82,7 @@ left: 0;
     border-radius:10px;
    text-align: center;
    margin-top: 20px;
+   background-color: #724c26;
 }
 
 #rubrik{
@@ -100,6 +101,7 @@ background-color: #724c26;
     border-radius: 10px;
     border: 1px solid black;
     text-align: center;
+    background-color: #724c26;
 
 }
 
