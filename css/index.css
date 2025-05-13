@@ -123,6 +123,7 @@ background-color: #724c26;
 
 .link{
     grid-area: link1;
+    background-image: url("/img/black-king-chess-piece-isolated-transparent-background_838900-16753.avif");
     text-align: center;
     align-content: center;
     background-color: #A06B35;
@@ -158,7 +159,7 @@ display: grid;
 height: 136vh;
 width: 98.8vw;
 grid-template-columns: 60% 40%;
-grid-template-rows:8% 30% 30% 30% 30% 8%;
+grid-template-rows:8% 30% 40% 30% 30% 8%;
 grid-template-areas: 
 "hd hd"
 "rub img1"
