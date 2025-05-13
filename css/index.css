@@ -82,7 +82,7 @@ left: 0;
     border-radius:10px;
    text-align: center;
    margin-top: 20px;
-   background-color: #724c26;
+   background-color: #A06B35;
 }
 
 #rubrik{
@@ -96,18 +96,18 @@ background-color: #724c26;
 
 .txt2{
     grid-area: txt2;
-    margin: 20%;
-    height: 45%;
+    margin: 5%;
+    height: 80%;
     border-radius: 10px;
     border: 1px solid black;
     text-align: center;
-    background-color: #724c26;
+    background-color:  #A06B35;
+    
 
 }
 
 #img1{
     grid-area: img1;
-   
     height: 110%;
     width:100%;
     margin-top: -2.1%;
@@ -123,11 +123,9 @@ background-color: #724c26;
 
 .link{
     grid-area: link1;
-    background-image: url("/img/black-king-chess-piece-isolated-transparent-background_838900-16753.avif");
-    text-align: center;
-    align-content: center;
+    background-image: url("/img/ChessPiece.png");
+    background-size: cover;
     background-color: #A06B35;
-    text-decoration: none;
     color: aliceblue;
     flex: auto;
     transition:0.5s;
@@ -154,17 +152,17 @@ background-color: #724c26;
 
 /* Dator */
 @media screen and (min-width: 768px){
-.wrapper{
+.start-wrapper{
 display: grid;
 height: 136vh;
 width: 98.8vw;
+margin-left:0.5%;
 grid-template-columns: 60% 40%;
-grid-template-rows:8% 30% 40% 30% 30% 8%;
+grid-template-rows:8% 30% 40% 30% 8%;
 grid-template-areas: 
 "hd hd"
 "rub img1"
 "txt link1"
-"img2 txt2"
 "img2 txt2"
 "ft ft"
 ;
@@ -173,20 +171,196 @@ grid-template-areas:
 }
 /* Mobil */
 @media screen and (max-width: 767px){
-    .wrapper{
+    .start-wrapper{
     display: grid;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
-    grid-template-columns: 60% 40%;
-    grid-template-rows:8% 30% 30% 30% 8%;
+    grid-template-columns: 100%;
+    grid-template-rows:8% 20% 20% 20% 20% 8%;
+    grid-template-areas: 
+    "hd"
+    "rub"
+    "img1"
+    "txt2"
+    "link1"
+    "ft"
+    ;
+    
+    #img2{
+        display:none;
+    }
+
+    .txt{
+        display:none;
+  
+    }
+
+    .txt2{
+        margin:0%;
+        margin-top: 15%;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+ 
+ 
+    .footer{
+        margin-bottom: -10%;
+    }
+    }
+    }
+
+
+    /* Dator */
+@media screen and (min-width: 768px){
+.rules-wrapper{
+display: grid;
+height: 136vh;
+width: 100vw;
+grid-template-columns: 30% 30% 30%;
+grid-template-rows:8% 30% 40% 30% 8%;
+grid-template-areas: 
+"hd hd hd"
+"rub rub rub"
+"link1 txt img2"
+". txt2 ."
+"ft ft ft"
+;
+
+
+ 
+    #img1{
+        display:none;
+    }
+
+    .txt{
+        height: 80%;
+  
+    }
+
+       .txt2{
+        height: 80%;
+    }
+}
+
+}
+/* Mobil */
+@media screen and (max-width: 767px){
+    .rules-wrapper{
+    display: grid;
+    height: 200vh;
+    width: 100vw;
+    grid-template-columns: 100%;
+    grid-template-rows:8% 20% 20% 20% 8%;
+    grid-template-areas: 
+    "hd"
+    "rub"
+    "link1"
+    "img2"
+    "ft"
+    ;
+    
+    #img1{
+        display:none;
+    }
+
+    .txt{
+        display:none;
+  
+    }
+
+    .txt2{
+        margin:0%;
+        margin-top: 15%;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+ 
+ 
+    .footer{
+        margin-bottom: -10%;
+    }
+    }
+    }
+
+     /* Dator */
+@media screen and (min-width: 768px){
+.about-wrapper{
+display: grid;
+height: 136vh;
+width: 100vw;
+grid-template-columns: 30% 20% 20% 30%;
+grid-template-rows:8% 30% 35% 20% 8%;
+grid-template-areas: 
+"hd hd hd hd"
+"rub . txt2 txt2"
+"link1 . img1 img1"
+"txt txt txt txt"
+"ft ft ft ft"
+;
+
+
+ 
+    #img2{
+        display:none;
+    }
+  
+
+
+    .txt{
+        height: 80%;
+  
+    }
+
+       .txt2{
+        height: 80%;
+    }
+}
+
+}
+/* Mobil */
+@media screen and (max-width: 767px){
+    .about-wrapper{
+    display: grid;
+    height: 200vh;
+    width: 100vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:8% 20% 20% 20% 8%;
     grid-template-areas: 
     "hd hd"
-    "txt img1"
-    " . link1"
-    "img2 txt2"
+    "rub ."
+    "link1 img1"
+    "txt txt"
     "ft ft"
     ;
     
-    
+    #img2{
+        display:none;
+    }
+
+    .txt2{
+        display:none;
+  
+    }
+
+    .txt{
+        margin:0%;
+        margin-top: 15%;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+ 
+ 
+    .footer{
+        margin-bottom: -10%;
+    }
     }
     }
